@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Mood Tracker - Reflect, Track, Thrive</title>
+    <link rel="icon" href="assets/Daily Mood Tracker.png" type="image/x-icon">
+    <link rel="stylesheet" href="index.css">
+     <!-- FullCalendar CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/6.1.8/main.min.css">
+<!-- FullCalendar JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/6.1.8/main.min.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <header class="glass-card">
+            <h1>Daily Mood Tracker</h1>
+            <div class="header-controls">
+                <button type="button" id="dark-mode-toggle">☀️</button>
+            </div>
+        </header>
+
+        <main>
+            <div class="mood-selector glass-card">
+                <div class="mood-grid">
+                    <div class="mood-option" data-mood="happy">😃</div>
+                    <div class="mood-option" data-mood="content">🙂</div>
+                    <div class="mood-option" data-mood="neutral">😐</div>
+                    <div class="mood-option" data-mood="sad">😞</div>
+                    <div class="mood-option" data-mood="angry">😡</div>
+                </div>
+
+                <div class="note-section">
+                    <textarea id="mood-note" placeholder="How was your day?"></textarea>
+                    <button type="button" id="save-btn" class="glass-card">Save Entry</button>
+                </div>
+                <div class="m">
+                    <p class="mood-day"></p>
+                </div>
+            </div>
+           
+        </main>
+
+     
+    <script src="app.js"></script>
+</body>
+</html>
